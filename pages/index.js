@@ -1,14 +1,28 @@
 import styled from "styled-components"
 import GSWrapper from "../components/container"
+import { FaSoundcloud, FaInstagram } from "react-icons/fa"
 
 const Wrapper = styled.main`
   background: #eee;
   padding: 20px;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: left;
+  min-height: 100vh;
   flex-direction: column;
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%233c3c3c' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2.5em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+  }
 `
 
 const H1 = styled.h1`
@@ -44,6 +58,25 @@ const SpecialLink = styled.a`
   }
 `
 
+const SC = styled(FaSoundcloud)`
+  color: #23282d;
+  font-size: 3em;
+`
+
+const IG = styled(FaInstagram)`
+  color: #23282d;
+  font-size: 3em;
+`
+const IconsLink = styled.a`
+  margin: 5px;
+  text-decoration: none;
+  &:hover {
+    background: #32dbca;
+    width: 50px;
+    cursor: pointer;
+  }
+`
+
 function HomePage() {
   return (
     <div>
@@ -56,9 +89,15 @@ function HomePage() {
         </H2>
         <H3>
           <SpecialLink href="https://soundcloud.com/improvsesh/reset-v2/s-trG5w">
-            Check out my latest track in the mean time.
+            Check my latest track in the mean time.
           </SpecialLink>
         </H3>
+        <IconsLink href="https://soundcloud.com/improvsesh">
+          <SC />
+        </IconsLink>
+        <IconsLink href="https://www.instagram.com/improvsessions/">
+          <IG />
+        </IconsLink>
       </Wrapper>
     </div>
   )
