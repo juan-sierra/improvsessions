@@ -5,6 +5,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   } 
+  *::selection {
+    background: #f4c95d;
+  }
   html, body {
     padding: 0;
     margin: 0;
