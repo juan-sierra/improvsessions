@@ -69,7 +69,7 @@ function HomePage() {
         </H2>
         <H3>
           <SpecialLink href="https://soundcloud.com/improvsesh/reset-v2/s-trG5w">
-            Check this out in the mean time.
+            Check my track on soundcloud in the mean time.
           </SpecialLink>
         </H3>
       </Wrapper>
