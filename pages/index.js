@@ -4,11 +4,24 @@ import GSWrapper from "../components/container"
 const Wrapper = styled.main`
   background: #eee;
   padding: 20px;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: left;
+  min-height: 100vh;
   flex-direction: column;
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%233c3c3c' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2.5em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+  }
 `
 
 const H1 = styled.h1`
