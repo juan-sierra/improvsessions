@@ -25,6 +25,11 @@ const Wrapper = styled.main`
   }
 `
 
+const Content = styled.section`
+  width: 970px;
+  margin: auto;
+`
+
 const H1 = styled.h1`
   font-size: 3.5em;
   font-family: Helvetica, sans-serif;
@@ -72,7 +77,6 @@ const IconsLink = styled.a`
   text-decoration: none;
   &:hover {
     background: #32dbca;
-    width: 50px;
     cursor: pointer;
   }
 `
@@ -82,22 +86,24 @@ function HomePage() {
     <div>
       <GSWrapper />
       <Wrapper>
-        <H1>Welcome to:</H1>
-        <H1>Improv Sessions</H1>
-        <H2>
-          <Special>Music coming soon.</Special>
-        </H2>
-        <H3>
-          <SpecialLink href="https://soundcloud.com/improvsesh/reset-v2/s-trG5w">
-            Check my latest track in the mean time.
-          </SpecialLink>
-        </H3>
-        <IconsLink href="https://soundcloud.com/improvsesh">
-          <SC />
-        </IconsLink>
-        <IconsLink href="https://www.instagram.com/improvsessions/">
-          <IG />
-        </IconsLink>
+        <Content>
+          <H1>Welcome to:</H1>
+          <H1>Improv Sessions</H1>
+          <H2>
+            <Special>Music coming soon.</Special>
+          </H2>
+          <H3>
+            <SpecialLink href="https://soundcloud.com/improvsesh/reset-v2/s-trG5w">
+              Check my latest track in the mean time.
+            </SpecialLink>
+          </H3>
+          <IconsLink href="https://soundcloud.com/improvsesh">
+            <SC />
+          </IconsLink>
+          <IconsLink href="https://www.instagram.com/improvsessions/">
+            <IG />
+          </IconsLink>
+        </Content>
       </Wrapper>
     </div>
   )
